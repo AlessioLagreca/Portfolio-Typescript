@@ -32,30 +32,7 @@ const Header: React.FC = () => {
 							<span className='text-sm hover:text-primary hover:cursor-pointer'>CONTACT</span>
 						</nav>
 					</div>
-					<div className='relative flex justify-center gap-16 mt-8 md:mt-0'>
-						<Image
-							src='/images/icon-facebook.svg'
-							alt='facebook'
-							height={imageHeight}
-							width={imageWidth}
-							style={{
-								height: "auto",
-								objectFit: "contain",
-								position: "relative",
-							}}
-						/>
-						<Image
-							src='/images/icon-twitter.svg'
-							alt='twitter'
-							height={imageHeight}
-							width={imageWidth}
-							style={{
-								height: "auto",
-								objectFit: "contain",
-								position: "relative",
-							}}
-						/>
-					</div>
+					<div className='relative flex justify-center gap-16 mt-8 md:mt-0'></div>
 				</Container>
 			</header>
 		</OpacityAnim>
