@@ -2,6 +2,7 @@ import Container from "../wrappers/container";
 import OpacityAnim from "../wrappers/opacityAnim";
 import { Button } from "../ui/button";
 import * as Avatar from "@radix-ui/react-avatar";
+import Link from "next/link";
 
 const headerLeft = {
 	hidden: { y: "-100%", opacity: 0 },
@@ -36,7 +37,9 @@ const Hero = (): JSX.Element => {
 						<h1 className='text-xl font-bold leading-10 tracking-tight sm:text-5xl md:text-4xl md:leading-none max-w-3xl'>
 							I'm Alessio, a Front-End Developer passionate about web development and clean design.
 						</h1>
-						<p className='mt-6 text-base leading-7'>Currently working on Upwork as a Freelancer</p>
+						<Button variant='greenSoft' size='mio' className='text-xl'>
+							<Link href='/about'>About Me</Link>
+						</Button>
 					</div>
 				</section>
 			</OpacityAnim>
