@@ -1,9 +1,6 @@
 "use client";
 
-import Footer from "../components/footer";
-import { LazyMotion, domAnimation, m } from "framer-motion";
 import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
-import { useState } from "react";
 import Main from "../components/main/main";
 
 export default function Home() {
