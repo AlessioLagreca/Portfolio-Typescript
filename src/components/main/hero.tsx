@@ -25,7 +25,7 @@ const Hero = (): JSX.Element => {
 					</span>
 					<span className='md:text-base sm:text-sm max-w-xl'>
 						a web developer passionate about Front-End Development, emerging Technologies and everything
-						programming-related. Constantly learnign new stuff. Here i will upload my projects and my experiences.
+						programming-related. Constantly learning new stuff. Here i will upload my projects and my experiences.
 					</span>
 					{/* <Button variant='greenSoft' size='mio' className='text-xl'>
 							<Link href='/about'>About Me</Link>
