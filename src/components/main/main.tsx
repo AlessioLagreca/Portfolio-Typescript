@@ -3,7 +3,6 @@ import { useRef, useEffect } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import { fade } from "../../app/helpers/transition";
 import { BentoGrid } from "../ui/bento-grid";
-import { BentoGridComponent } from "./grid-projects";
 
 const Main = (): JSX.Element => {
 	const ref = useRef(null);
@@ -20,7 +19,6 @@ const Main = (): JSX.Element => {
 		<>
 			<motion.div variants={fade}>
 				<Hero />
-				<BentoGridComponent />
 			</motion.div>
 		</>
 	);
