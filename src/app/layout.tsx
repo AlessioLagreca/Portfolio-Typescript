@@ -19,7 +19,7 @@ export default function RootLayout({
 		<html lang='en'>
 			<body className={rubik.className}>
 				<ThemeProvider attribute='class' defaultTheme='light' enableSystem disableTransitionOnChange>
-					{children}s
+					{children}
 				</ThemeProvider>
 			</body>
 		</html>
