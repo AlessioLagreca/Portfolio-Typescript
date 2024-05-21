@@ -8,7 +8,7 @@ const Project = (): JSX.Element => {
 				<ul>
 					<Separator />
 
-					<li className='flex flex-col'>
+					<li className='flex flex-col mt-2'>
 						<div className='flex gap-2 items-center'>
 							<div className='rounded-full bg-orange-300 w-2 h-2'></div>
 							<Link
@@ -27,7 +27,7 @@ const Project = (): JSX.Element => {
 					</li>
 					<Separator />
 
-					<li className='flex flex-col'>
+					<li className='flex flex-col mt-2'>
 						<div className='flex gap-2 items-center'>
 							<div className='rounded-full bg-orange-300 w-2 h-2'></div>
 							<Link
