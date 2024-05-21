@@ -1,8 +1,7 @@
-import Container from "../wrappers/container";
 import OpacityAnim from "../wrappers/opacityAnim";
-import { Button } from "../ui/button";
 import * as Avatar from "@radix-ui/react-avatar";
-import Link from "next/link";
+import { useRef, useState } from "react";
+import AsciiEffectScene from "./ascii";
 
 const headerLeft = {
 	hidden: { y: "-100%", opacity: 0 },
@@ -21,29 +20,42 @@ const headerRight = {
 };
 
 const Hero = (): JSX.Element => {
-	return (
-		<Container>
-			<OpacityAnim variants={headerLeft}>
-				<section className='flex flex-col items-center justify-center gap-8 md:mt-24'>
-					<Avatar.Root className='inline-flex h-[140px] w-[140px] select-none items-center justify-center overflow-hidden rounded-full align-middle border-gray-300 border-4'>
-						<Avatar.Image
-							src='https://avatars.githubusercontent.com/u/82826676?s=400&u=4e8fbe6c1b74dec73a6f35d7f055fc931f42cbb4&v=4'
-							alt='@alessiolagreca'
-						/>
-						<Avatar.Fallback>CN</Avatar.Fallback>
-					</Avatar.Root>
+	const containerRef = useRef<HTMLDivElement>(null);
 
-					<div className='text-center'>
-						<h1 className='text-xl font-semibold leading-10 tracking-tighter sm:text-2xl md:text-3xl md:leading-none max-w-xl'>
-							I'm Alessio, a Front-End Developer passionate about web development and clean design.
-						</h1>
-						<Button variant='greenSoft' size='mio' className='text-xl'>
+	return (
+		<OpacityAnim variants={headerLeft}>
+			<section className='mx-auto max-w-[560px] flex flex-col items-center justify-center gap-8 mt-6 md:mt-12 px-[30px]'>
+				<Avatar.Root className='inline-flex h-[140px] w-[140px] select-none items-center justify-center overflow-hidden rounded-full align-middle border-gray-300 border-4 shadow-md'>
+					<Avatar.Image
+						src='https://avatars.githubusercontent.com/u/82826676?s=400&u=4e8fbe6c1b74dec73a6f35d7f055fc931f42cbb4&v=4'
+						alt='@alessiolagreca'
+					/>
+					<Avatar.Fallback>CN</Avatar.Fallback>
+				</Avatar.Root>
+
+				<div className='mx-auto max-w-[560px] mt-6 items-center justify-center'>
+					<span className='font-semibold text-lg mb-8'>
+						Hi, I'm Alessio Lagreca
+						<br />
+					</span>
+					<span className='md:text-base sm:text-sm max-w-xl'>
+						a web developer interested in Front-End De, Emergin Technologies, Machine Learning, Networks. Constantly
+						learnign new stuff. Sign up for my (monthly-ish) personal newsletter, which includes a summary of new links.
+					</span>
+					{/* <Button variant='greenSoft' size='mio' className='text-xl'>
 							<Link href='/about'>About Me</Link>
-						</Button>
-					</div>
-				</section>
-			</OpacityAnim>
-		</Container>
+						</Button> */}
+				</div>
+				{/* ASCII THREE.JS */}
+				<div
+					ref={containerRef}
+					className=' border-[1px] border-gray-300 shadow-md rounded-xl w-[300px] md:w-[560px] h-[200px] text-black bg-[#f5f5f5] '
+				>
+					{/* <AsciiArtComponent /> */}
+					<AsciiEffectScene container={containerRef} />
+				</div>
+			</section>
+		</OpacityAnim>
 	);
 };
 

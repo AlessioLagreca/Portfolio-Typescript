@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Rubik } from "next/font/google";
+import { Hanken_Grotesk } from "next/font/google";
 import "./styles/globals.css";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 
-const rubik = Rubik({ subsets: ["latin"] });
+const hgrotesk = Hanken_Grotesk({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -17,8 +17,8 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang='en'>
-			<body className={rubik.className}>
-				<ThemeProvider attribute='class' defaultTheme='light' enableSystem disableTransitionOnChange>
+			<body className={hgrotesk.className}>
+				<ThemeProvider attribute='class' defaultTheme='dark' enableSystem disableTransitionOnChange>
 					{children}
 				</ThemeProvider>
 			</body>

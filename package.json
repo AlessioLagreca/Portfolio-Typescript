@@ -11,9 +11,11 @@
 	"dependencies": {
 		"@radix-ui/react-avatar": "^1.0.4",
 		"@radix-ui/react-dropdown-menu": "^2.0.6",
+		"@radix-ui/react-separator": "^1.0.3",
 		"@radix-ui/react-slot": "^1.0.2",
 		"@studio-freight/react-lenis": "^0.0.46",
 		"@tabler/icons-react": "^3.2.0",
+		"@types/three": "^0.164.0",
 		"class-variance-authority": "^0.7.0",
 		"clsx": "^2.1.0",
 		"framer-motion": "^11.0.25",
@@ -25,7 +27,8 @@
 		"react": "^18",
 		"react-dom": "^18",
 		"tailwind-merge": "^2.2.2",
-		"tailwindcss-animate": "^1.0.7"
+		"tailwindcss-animate": "^1.0.7",
+		"three": "^0.164.1"
 	},
 	"devDependencies": {
 		"@types/node": "^20",
