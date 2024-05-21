@@ -39,8 +39,8 @@ const Hero = (): JSX.Element => {
 						<br />
 					</span>
 					<span className='md:text-base sm:text-sm max-w-xl'>
-						a web developer interested in Front-End De, Emergin Technologies, Machine Learning, Networks. Constantly
-						learnign new stuff. Sign up for my (monthly-ish) personal newsletter, which includes a summary of new links.
+						a web developer passionate about Front-End Development, Emergin Technologies and everything
+						programming-related. Constantly learnign new stuff. Here i will upload my projects and my experiences.
 					</span>
 					{/* <Button variant='greenSoft' size='mio' className='text-xl'>
 							<Link href='/about'>About Me</Link>
