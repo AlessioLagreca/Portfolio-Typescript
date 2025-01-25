@@ -41,7 +41,7 @@ const Project = (): JSX.Element => {
                 <div className="rounded-full bg-orange-300 w-2 h-2"></div>
                 <Link
                   className="py-2"
-                  href="https://password-manager-tan-phi.vercel.app/"
+                  href="https://advice-generator-fm-ten.vercel.app/"
                   passHref
                   legacyBehavior
                 >
@@ -49,7 +49,7 @@ const Project = (): JSX.Element => {
                     className="hover:underline hover:text-gray-600"
                     target="_blank"
                   >
-                    Password Manager 🗝️🗝️🗝️ (temporaly unavailable)
+                    Advice Generator 🎲🎲🎲
                   </a>
                 </Link>
               </div>
