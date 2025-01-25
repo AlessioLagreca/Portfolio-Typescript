@@ -83,6 +83,28 @@ const Project = (): JSX.Element => {
                 animations i've used Framer Motion, Lenis Scroll and GSAP.
               </span>
             </li>
+            <li className="flex flex-col mt-2">
+              <div className="flex gap-2 items-center">
+                <div className="rounded-full bg-orange-300 w-2 h-2"></div>
+                <Link
+                  className="py-2 hover:underline hover:text-gray-600"
+                  href="https://landing-page-fm-nine.vercel.app/"
+                  passHref
+                  legacyBehavior
+                >
+                  <a
+                    className="hover:underline hover:text-gray-600"
+                    target="_blank"
+                  >
+                    Simple Landing Page (FrontEnd Master)
+                  </a>
+                </Link>
+              </div>
+              <span className="pl-4 py-2 text-gray-500">
+                Simple Landing Page built using Next.js, Tailwind CSS,
+                TypeScript based on design provided by Front-End masters
+              </span>
+            </li>
           </ul>
         </div>
       </section>
