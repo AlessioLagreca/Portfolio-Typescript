@@ -39,17 +39,12 @@ const Project = (): JSX.Element => {
             <li className="flex flex-col mt-2">
               <div className="flex gap-2 items-center">
                 <div className="rounded-full bg-orange-300 w-2 h-2"></div>
-                <Link
-                  className="py-2"
-                  href="https://advice-generator-fm-ten.vercel.app/"
-                  passHref
-                  legacyBehavior
-                >
+                <Link className="py-2" href="" passHref legacyBehavior>
                   <a
                     className="hover:underline hover:text-gray-600"
                     target="_blank"
                   >
-                    Advice Generator 🎲🎲🎲
+                    Password Manager 🔐🔐🔐
                   </a>
                 </Link>
               </div>
@@ -83,6 +78,9 @@ const Project = (): JSX.Element => {
                 animations i've used Framer Motion, Lenis Scroll and GSAP.
               </span>
             </li>
+
+            <Separator />
+
             <li className="flex flex-col mt-2">
               <div className="flex gap-2 items-center">
                 <div className="rounded-full bg-orange-300 w-2 h-2"></div>
@@ -103,6 +101,30 @@ const Project = (): JSX.Element => {
               <span className="pl-4 py-2 text-gray-500">
                 Simple Landing Page built using Next.js, Tailwind CSS,
                 TypeScript based on design provided by Front-End masters
+              </span>
+            </li>
+
+            <Separator />
+
+            <li className="flex flex-col mt-2">
+              <div className="flex gap-2 items-center">
+                <div className="rounded-full bg-orange-300 w-2 h-2"></div>
+                <Link
+                  className="py-2"
+                  href="https://advice-generator-fm-ten.vercel.app/"
+                  passHref
+                  legacyBehavior
+                >
+                  <a
+                    className="hover:underline hover:text-gray-600"
+                    target="_blank"
+                  >
+                    Advice Generator 🎲🎲🎲
+                  </a>
+                </Link>
+              </div>
+              <span className="pl-4 py-2 text-gray-500">
+                Little project to generate random advice using an external API
               </span>
             </li>
           </ul>
